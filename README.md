@@ -6,6 +6,8 @@ The `design-files` folder contains both a Figma file, and .jpg of a design. You 
 
 The `src` folder contains files so that you can get your project up and running without worrying about content for posts/articles. That folder contains:
 
+- HTML files to use as a base for the different page layouts
+- CSS file for styling the pages
 - 5 blog articles in the `blog` folder
 - images and a logo in the `assets` folder
 
