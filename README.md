@@ -1,3 +1,5 @@
+# JAMStack personal blog - starter files
+
 These are the starting files used by [Kevin Powell](https://kevinpowell.co) to create a personal blog site for the [Codementor](https://www.codementor.io/) DevProjects Challenge, [Create a fast and secure blog using JAMStack](#). You are free to use them however you want to get started with the challenge, if you'd like to start working on creating the site without worrying about the content itself.
 
 The [design-files](#) folder contains both a Figma file, and .jpg of a design. You do not need to use this design. Kevin used this design in his tutorial, and they are provided if you would rather focus on creating something without worrying about design decisions.
