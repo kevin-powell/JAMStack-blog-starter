@@ -1,0 +1,69 @@
+--- 
+title: Blog
+layout: 'base.njk'
+--- 
+ 
+<div class="section container">
+<h1 class="section-title">Recent articles</h1>
+
+  <ul role="list" class="articles__list flow">
+
+    {%- for post in collections.post | reverse -%}
+      {% include 'article-snippet.njk' %}
+    {%- endfor %}
+
+  </ul>
+</div>
+
+
+{# 
+<ul role="list" class="articles__list flow"><li>
+  <article class="snippet">
+<img src="/assets/blog/carbon-2021-06-11t092807.024.png" alt="a man on his computer" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/another-article/">Another article!!</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>Jun 15, 2021</span></p>
+<p class="snippet__body">This is a new article that I&#39;ll be posting</p> 
+<a href="/blog/another-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li><li>
+  <article class="snippet">
+<img src="/assets/blog/article-5.jpg" alt="This is a test" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/my-fifth-article/">My Fifth Article</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>Jun 14, 2021</span></p>
+<p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p> 
+<a href="/blog/my-fifth-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li><li>
+  <article class="snippet">
+<img src="/assets/blog/article-4.jpg" alt="This is a test" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/my-fourth-article/">My Fourth Article</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 31, 2021</span></p>
+<p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p> 
+<a href="/blog/my-fourth-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li><li>
+  <article class="snippet">
+<img src="/assets/blog/article-3.jpg" alt="This is a test" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/my-third-article/">My Third Article</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 27, 2021</span></p>
+<p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p> 
+<a href="/blog/my-third-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li><li>
+  <article class="snippet">
+<img src="/assets/blog/article-2.jpg" alt="This is a test" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/my-second-article/">My Second Article</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>May 14, 2021</span></p>
+<p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p> 
+<a href="/blog/my-second-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li><li>
+  <article class="snippet">
+<img src="/assets/blog/article-1.jpg" alt="This is a test" class="snippet__image">
+<h3 class="snippet__title"><a href="/blog/my-first-article/">My First Article</a></h3>
+<p class="snippet__meta">by <span>Kevin Powell</span> on <span>Apr 30, 2021</span></p>
+<p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p> 
+<a href="/blog/my-first-article/" class="btn btn--primary">Continue Reading</a>
+</article>
+ </li></ul> 
+ #}
