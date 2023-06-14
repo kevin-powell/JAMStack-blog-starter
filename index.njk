@@ -1,0 +1,35 @@
+--- 
+title: example
+layout: 'base.njk'
+---
+
+<section class="hero">
+  <div class="container flow">
+      <div class="hero__content flow">
+        <h1 class="section-title">Welcome to my blog!</h1>
+        <p>I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve run into, useful resources, and more.</p>
+        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
+        <div class="flex-group">
+          <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
+          <a href="./blog" class="btn btn--neutral">Most recent articles</a>
+        </div>
+      </div>
+      <div>
+        <img src="//unsplash.it/510" alt="" class="hero__image">
+      </div>
+  </div>
+</section>
+
+<section id="featured-articles" class="featured-articles">
+  <div class="container flow">
+    <h2 class="section-title text-center ">Featured articles</h2>
+    <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
+    <ul role="list" class="articles__list flow">
+
+      {%- for post in collections.featured | reverse -%}
+        {% include 'article-snippet.njk' %}
+      {%- endfor %}
+  
+    </ul>
+  </div>
+</section> 
